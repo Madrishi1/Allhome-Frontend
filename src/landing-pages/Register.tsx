@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../Button.tsx';
+import Button from '../Button';
 import { Link } from 'react-router-dom';
-import Header from '../Header.tsx';
+import Header from '../Header';
 
 type RegisterProps = {
   title: string;
@@ -19,7 +19,7 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
           </div>
           <main className="py-12">
             <div className="max-w-4xl space-x-16 mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-              <div className=' mt-8 '>
+            <div className='mt-8 '>
                 <h2 className="text-4xl font-bold mb-6">Alhome - largest Home retail shop in the world.</h2>
                 <p className="mb-4">
                   Pellentesque ultrices, dui vel hendrerit iaculis, ipsum velit vestibulum risus, ac tincidunt diam lectus
@@ -28,71 +28,27 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
                 </p>
                 <ul className="list-none space-y-2">
                   <li className="flex items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      className="text-green-500 mr-2"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
+                  <svg className="w-6 h-6 mr-2 text-sm text-[#FFFFFF] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12 4.7 4.5 9.3-9"/>
+                  </svg>
                     Feature 1
                   </li>
                   <li className="flex items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      className="text-green-500 mr-2"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
+                  <svg className="w-6 h-6 mr-2 text-sm text-[#FFFFFF] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12 4.7 4.5 9.3-9"/>
+                  </svg>
                     Feature 2
                   </li>
                   <li className="flex items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      className="text-green-500 mr-2"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
+                  <svg className="w-6 h-6 mr-2 text-sm text-[#FFFFFF] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12 4.7 4.5 9.3-9"/>
+                  </svg>
                     Feature 3
                   </li>
                   <li className="flex items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      className="text-green-500 mr-2"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
+                  <svg className="w-6 h-6 mr-2 text-sm text-[#FFFFFF] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12 4.7 4.5 9.3-9"/>
+                  </svg>
                     Feature 4
                   </li>
                 </ul>
@@ -153,10 +109,19 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
                         required
                       />
                     </div>
-                    <div className="flex flex-col">
+                    
                       <Button title="Process"/>
                     
-                    <label htmlFor="terms" className="ml-2 text-sm text-gray-600">
+                    <div>
+                    <label htmlFor="terms" className="mt-2 text-sm text-gray-600">
+                    <input
+                      aria-hidden="true"
+                      tabIndex={-1}
+                      type="checkbox"
+                      value="on"
+                      className='mr-1'
+                      // style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px;"
+                    />
                         Do you agree to Alhome's Terms of Condition and Privacy Policy.
                     </label>
                     </div>

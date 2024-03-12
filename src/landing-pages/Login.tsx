@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '../Button.tsx';
-import Header from '../Header.tsx';
+import Button from '../Button';
+import Header from '../Header';
 import { Link } from 'react-router-dom';
 
 type LoginProps = {
@@ -27,71 +27,27 @@ const Login: React.FC<LoginProps> = ({ title }) => {
                 </p>
                 <ul className="list-none space-y-2">
                   <li className="flex items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      className="text-green-500 mr-2"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
+                  <svg className="w-6 h-6 mr-2 text-sm text-[#FFFFFF] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12 4.7 4.5 9.3-9"/>
+                  </svg>
                     Feature 1
                   </li>
                   <li className="flex items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      className="text-green-500 mr-2"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
+                  <svg className="w-6 h-6 mr-2 text-sm text-[#FFFFFF] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12 4.7 4.5 9.3-9"/>
+                  </svg>
                     Feature 2
                   </li>
                   <li className="flex items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      className="text-green-500 mr-2"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
+                  <svg className="w-6 h-6 mr-2 text-sm text-[#FFFFFF] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12 4.7 4.5 9.3-9"/>
+                  </svg>
                     Feature 3
                   </li>
                   <li className="flex items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      className="text-green-500 mr-2"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
+                  <svg className="w-6 h-6 mr-2 text-sm text-[#FFFFFF] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12 4.7 4.5 9.3-9"/>
+                  </svg>
                     Feature 4
                   </li>
                 </ul>
