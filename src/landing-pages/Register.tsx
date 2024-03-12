@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button.js';
+import Button from '../Button.tsx';
 import { Link } from 'react-router-dom';
 import Header from '../Header.tsx';
 
@@ -103,7 +103,7 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
                   <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2 border-transparent hover:border-gray-300 focus:outline-none focus:border-blue-500">
                   <Link to ="/">Sign in</Link>
                   </div>
-                  <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2 border-transparent hover:border-gray-300 focus:outline-none focus:border-blue-500">
+                  <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2 border-transparent border-blue-500 focus:outline-none focus:border-blue-500">
                     Register
                   </div>
                 </div>
@@ -154,7 +154,7 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
                       />
                     </div>
                     <div className="flex flex-col">
-                      <Button name="Process"/>
+                      <Button title="Process"/>
                     
                     <label htmlFor="terms" className="ml-2 text-sm text-gray-600">
                         Do you agree to Alhome's Terms of Condition and Privacy Policy.

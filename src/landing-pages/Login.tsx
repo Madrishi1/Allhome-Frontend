@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button.js';
+import Button from '../Button.tsx';
 import Header from '../Header.tsx';
 import { Link } from 'react-router-dom';
 
@@ -99,7 +99,7 @@ const Login: React.FC<LoginProps> = ({ title }) => {
               <div className=" bg-white rounded-lg shadow-lg p-6 mt-10">
               <div dir="ltr" data-orientation="horizontal">
                 <div className="flex space-x-1 border-b">
-                  <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2 border-transparent hover:border-gray-300 focus:outline-none focus:border-blue-500">
+                  <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2 border-transparent border-blue-500 focus:outline-none focus:border-blue-500">
                     Sign In
                   </div>
                   <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2 border-transparent hover:border-gray-300 focus:outline-none focus:border-blue-500">
@@ -128,7 +128,7 @@ const Login: React.FC<LoginProps> = ({ title }) => {
                       />
                     </div>
                     <div className="flex flex-col">
-                      <Button name="Process"/>
+                      <Button title="Process"/>
                     </div>
                     </form>
                   </div>
