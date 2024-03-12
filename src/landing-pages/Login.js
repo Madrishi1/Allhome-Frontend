@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button';
 
 function Login(props) {
     return (
@@ -18,9 +19,9 @@ function Login(props) {
               <h1 class="text-2xl font-bold">alHome</h1>
             </div>
           </div>
-          <main class="py-12 h-lvh bg-[#111111A1]">
+          <main class="py-12 h-lvh  bg-[#111111A1]">
             <div class="max-w-4xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-              <div className=' '>
+              <div className=' w-[] '>
                 <h2 class="text-4xl font-bold mb-6">Alhome - largest Home retail shop in the world.</h2>
                 <p class="mb-4">
                   Pellentesque ultrices, dui vel hendrerit iaculis, ipsum velit vestibulum risus, ac tincidunt diam lectus
@@ -128,9 +129,7 @@ function Login(props) {
                       />
                     </div>
                     <div class="flex flex-col">
-                      <button class="inline-flex mt-4 items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 w-full bg-[#2563eb] text-white">
-                      PROCEED
-                    </button>
+                      <Button name="Process"/>
                     </div>
                     </form>
                   </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Button from '../Button';
 
 function Register() {
     return (
@@ -153,9 +153,7 @@ function Register() {
                       />
                     </div>
                     <div class="flex flex-col">
-                      <button class="inline-flex mt-4 items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 w-full bg-[#2563eb] text-white">
-                      PROCEED
-                    </button>
+                    <Button name="Process"/>
                     
                     <label for="terms" class="ml-2 text-sm text-gray-600">
                         Do you agree to Alhome's Terms of Condition and Privacy Policy.
