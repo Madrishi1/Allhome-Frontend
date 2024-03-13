@@ -2,6 +2,8 @@ import React from 'react';
 import Button from '../Button';
 import Header from '../Header';
 import { Link } from 'react-router-dom';
+import { FormattedMessage } from "react-intl";
+
 
 type LoginProps = {
   title: string;
@@ -11,19 +13,13 @@ const Login: React.FC<LoginProps> = ({ title }) => {
     return (
         <div className="min-h-screen bg-[#111111A1] text-white ">
           <Header title={""} />
-          <div className="bg-[#323031] text-white py-3 h-18">
-            <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-              <h1 className="text-2xl font-bold">alHome</h1>
-            </div>
-          </div>
+          
           <main className="py-12 ">
             <div className="max-w-4xl space-x-16 mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
               <div className='mt-8 '>
-                <h2 className="text-4xl font-bold mb-6">Alhome - largest Home retail shop in the world.</h2>
+                <h2 className="text-4xl font-bold mb-6"><FormattedMessage id="app.desLargeFont"/></h2>
                 <p className="mb-4">
-                  Pellentesque ultrices, dui vel hendrerit iaculis, ipsum velit vestibulum risus, ac tincidunt diam lectus
-                  id magna. Praesent maximus lobortis neque sit amet rhoncus. Nullam tempus lectus a dui aliquet, non
-                  ultricies nibh elementum. Nulla ac nulla dolor.
+                  <FormattedMessage id="app.desSmallFont"/>
                 </p>
                 <ul className="list-none space-y-2">
                   <li className="flex items-center">
@@ -56,17 +52,17 @@ const Login: React.FC<LoginProps> = ({ title }) => {
               <div dir="ltr" data-orientation="horizontal">
                 <div className="flex space-x-1 border-b">
                   <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2 border-transparent border-blue-500 focus:outline-none focus:border-blue-500">
-                    Sign In
+                    <FormattedMessage id="app.signIn"/>
                   </div>
                   <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2 border-transparent hover:border-gray-300 focus:outline-none focus:border-blue-500">
-                    <Link to ="/Register">Register</Link>
+                    <Link to ="/Register"><FormattedMessage id="app.register"/></Link>
                   </div>
                 </div>
                 <div>
                   <div>
                     <form className="space-y-4 mt-4">
                     <div className="flex flex-col">
-                      <span className='text-sm mb-2 font-bold text-[#323031]'>Email Address / Phone Number</span>
+                      <span className='text-sm mb-2 font-bold text-[#323031]'><FormattedMessage id= "emailPhone"/></span>
                       <input
                         type="text"
                         className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
@@ -75,7 +71,7 @@ const Login: React.FC<LoginProps> = ({ title }) => {
                       />
                     </div>
                     <div className="flex flex-col">
-                      <span className='text-sm mb-2 font-bold mt- text-[#323031]'>Password</span>
+                      <span className='text-sm mb-2 font-bold mt- text-[#323031]'><FormattedMessage id="app.password"/></span>
                       <input
                         type="password"
                         className="flex h-10 w-full  rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
@@ -84,7 +80,7 @@ const Login: React.FC<LoginProps> = ({ title }) => {
                       />
                     </div>
                     <div className="flex flex-col">
-                      <Button title="Process"/>
+                      <Button title={<FormattedMessage id="app.process"/>}/>
                     </div>
                     </form>
                   </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 type ButtonProps = {
-    title: string;
+    title: any;
   };
   
   const Button: React.FC<ButtonProps> = ({ title }) => {

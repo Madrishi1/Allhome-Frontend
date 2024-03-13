@@ -11,12 +11,6 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
     return (
         <div className="min-h-screen bg-[#111111A1] text-white ">
           <Header title=''/>
-
-          <div className="bg-[#323031] text-white py-3 h-18">
-            <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-              <h1 className="text-2xl font-bold">alHome</h1>
-            </div>
-          </div>
           <main className="py-12">
             <div className="max-w-4xl space-x-16 mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             <div className='mt-8 '>

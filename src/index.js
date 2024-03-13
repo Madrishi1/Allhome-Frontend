@@ -1,22 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Login from './landing-pages/Login.tsx';
-import Register from './landing-pages/Register.tsx';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import App from './App.tsx'
+import { IntlProvider, FormattedMessage } from "react-intl";
+import messages_en from "./locales/en.json"
+import messages_ar from "./locales/arab.json" 
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <BrowserRouter>
-      <Routes>
-        <Route path="/" >
-          <Route index  element={<Login />} />
-          <Route path="/Register" element={<Register />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
 
+const messages = {
+  en: messages_en,
+  ar: messages_ar,
+};
+
+
+
+const locale = "ar";
+
+console.log(messages[locale],"jhij")
+
+
+root.render(
+  <React.StrictMode>
+    <IntlProvider locale={locale} messages={messages[locale]}>
+      <App/>
+    </IntlProvider>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
