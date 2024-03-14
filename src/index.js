@@ -17,7 +17,7 @@ const messages = {
 
 
 
-const locale = "ar";
+const locale = "en";
 
 console.log(messages[locale],"jhij")
 
